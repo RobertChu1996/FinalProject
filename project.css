@@ -42,7 +42,7 @@ header, footer{
 	text-transform: uppercase;
 	font-size: 20px;
 	letter-spacing: 1px;
-    
+
 }
 .form{
     border-radius: 5px;
@@ -92,6 +92,7 @@ input[type=submit] {
     height: 40px;
     width: 40px;
 }
+<<<<<<< HEAD
 fieldset{
     text-align: center;
     background-color: cornsilk;
@@ -125,3 +126,5 @@ th,#Grade{
 select{
     width: 65px;
 }
+=======
+>>>>>>> 69730754a41cc943f7fa9981e0b916ab275f54f1
