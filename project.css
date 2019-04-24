@@ -129,3 +129,14 @@ select{
 #country{
     width:100px;
 }
+
+#normalList{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+    display: block;
+    text-align: center;
+    float:none;
+}
+#tookList{
+    background-color: deepskyblue;
+}
