@@ -3,11 +3,13 @@
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
 }
 
 li {
@@ -16,11 +18,11 @@ li {
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+   display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 130px;
+    text-decoration: none;
 }
 
 li a:hover:not(.active) {
@@ -58,6 +60,10 @@ body{
 }
 h3{
     text-decoration:underline;
+}
+
+h1{
+    color:azure;
 }
 
 input[type=text], select, textarea {
