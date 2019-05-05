@@ -5,10 +5,15 @@
 
 	<meta charset="utf-8">
   <title>Class List</title>
+
   <link rel= "stylesheet" href= "project.css">
+	<link rel = "stylesheet" href = "tablefilter.css">
+	<link rel = "stylesheet" href = "dropDownButton.css">
+
   <script src="project.js"></script>
   <script src = "dropdown.js"></script>
-  <link rel = "stylesheet" href = "dropDownButton.css">
+	<script src ="filter.js"></script>
+
 
 </head>
 
@@ -32,7 +37,7 @@
 
   <!-- Creates drop down menu to select level of classes EX. 101, 341, 344 etc. !-->
   <div class = "dropdown">
-      <button onclick="dropFunction()" class ="dropbtn">Narrow by Course Level</button>
+      <button onclick="dropFunction()" class ="dropbtn">Navigate to Course Level</button>
       <div id = "myDropdown" class = "dropdown-content">
           <a href="#100Class"> 100 Level Classes</a>
           <a href="#200Class"> 200 Level Classes</a>
@@ -45,53 +50,226 @@
   <h3>
     <a name = "100Class">100 Level classes</a>
   </h3>
-  <ul>
-    <li>CS101--Intro to Comp. Sci.</li>
-    <li>CS111--Intro to C Programming</li>
-    <li>CS112--Intro to Pyhton</li>
-    <li>CS144--Intro to SQL</li>
-    <li>CS190--Intro to Algorithms</li>
-  </ul>
+	<input type ="text"  id ="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
+	<table id="myTable">
+	  <tr class="header">
+	    <th style = "width:30%;">Course Number</th>
+	    <th style = "width:60%;">Course Title</th>
+			<th style = "width:10%;">Credit Amount</th>
+	  </tr>
+	  <tr>
+	    <td>CS101</td>
+	    <td>Intro to Comp. Sci</td>
+			<td>3</td>
+	  </tr>
+	  <tr>
+	    <td>CS102</td>
+	    <td>Intro to C Programming</td>
+			<td>4</td>
+	  </tr>
+	  <tr>
+	    <td>CS103</td>
+	    <td>Intro to Python</td>
+			<td>4</td>
+	  </tr>
+		<tr>
+			<td>CS109</td>
+			<td>Intro to Databases</td>
+			<td>3</td>
+	  <tr>
+	    <td>CS116</td>
+	    <td>Web Technology I</td>
+			<td>3</td>
+	  </tr>
+	</table>
 
+	<div class = "dropdown">
+			<button onclick="dropFunction()" class ="dropbtn">Navigate to Course Level</button>
+			<div id = "myDropdown" class = "dropdown-content">
+					<a href="#100Class"> 100 Level Classes</a>
+					<a href="#200Class"> 200 Level Classes</a>
+					<a href="#300Class"> 300 Level Classes</a>
+					<a href="#400Class"> 400 level Classes</a>
+			</div>
+	</div>
   <h3>
     <a name= "200Class">200 Level classes</a>
   </h3>
-  <ul>
-    <li>CS201--C++</li>
-    <li>CS202--C#</li>
-    <li>CS234--Algorithms I</li>
-    <li>CS250--Algortihms II</li>
-    <li>CS275--Mathematical Foundations of Algorithms</li>
-  </ul>
+	<input type ="text"  id ="myInput2" onkeyup="myFunction2()" placeholder="Search for names..">
 
+	<table id="myTable2">
+		<tr class="header">
+			<th style = "width:30%;">Course Number</th>
+	    <th style = "width:60%;">Course Title</th>
+			<th style = "width:10%;">Credit Amount</th>
+		</tr>
+		<tr>
+			<td>CS201</td>
+			<td>C++ Programming</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS202</td>
+			<td>Advanced Python Programming</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CS205</td>
+			<td>C# Programming</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS210</td>
+			<td>Intermediate Database</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS234</td>
+			<td>Algorithms and Problem Solving I</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS250</td>
+			<td>Algorithms and Problem Solving II</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS275</td>
+			<td>Mathematical Foundations of Algorithms</td>
+			<td>4</td>
+		</tr>
+	</table>
+
+
+	<div class = "dropdown">
+			<button onclick="dropFunction()" class ="dropbtn">Navigate to Course Level</button>
+			<div id = "myDropdown" class = "dropdown-content">
+					<a href="#100Class"> 100 Level Classes</a>
+					<a href="#200Class"> 200 Level Classes</a>
+					<a href="#300Class"> 300 Level Classes</a>
+					<a href="#400Class"> 400 level Classes</a>
+			</div>
+	</div>
   <h3>
     <a name = "300Class">300 Level Classes</a>
   </h3>
-  <ul>
-    <li>CS313--Networking and Telecommunications</li>
-    <li>CS341--Data Structures</li>
-    <li>CS344--Intro to Web Programming</li>
-    <li>CS345--Mobile App Development</li>
-    <li>CS375--Computer Systems</li>
-    <li>CS385--Applied Databases Management Systems</li>
-  </ul>
+	<input type ="text"  id ="myInput3" onkeyup="myFunction3()" placeholder="Search for names..">
 
+	<table id="myTable3">
+		<tr class="header">
+			<th style = "width:30%;">Course Number</th>
+	    <th style = "width:60%;">Course Title</th>
+			<th style = "width:10%;">Credit Amount</th>
+		</tr>
+		<tr>
+			<td>CS313</td>
+			<td>Networking and Telecommunications</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS341</td>
+			<td>Data Structures</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS344</td>
+			<td>Intro to Web Programming</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CS345</td>
+			<td>Mobile Application Development</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CS375</td>
+			<td>Computer Systems</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS385</td>
+			<td>Applied Database Management Systems</td>
+			<td>4</td>
+		</tr>
+	</table>
+
+
+	<div class = "dropdown">
+			<button onclick="dropFunction()" class ="dropbtn">Navigate to Course Level</button>
+			<div id = "myDropdown" class = "dropdown-content">
+					<a href="#100Class"> 100 Level Classes</a>
+					<a href="#200Class"> 200 Level Classes</a>
+					<a href="#300Class"> 300 Level Classes</a>
+					<a href="#400Class"> 400 level Classes</a>
+			</div>
+	</div>
   <h3>
     <a name = "400Class">400 Level Classes</a>
   </h3>
-  <ul>
-    <li>CS410--Software Engineering</li>
-    <li>CS405--Operating Systems</li>
-    <li>CS413--Advanced Networking and Telecommunications</li>
-    <li>CS415--Principles of Programming Languages</li>
-    <li>CS420--Computer Architecture</li>
-    <li>CS423--Computer and Network Security</li>
-    <li>CS425--Numerical Analysis</li>
-    <li>CS430--Computer Graphics</li>
-    <li>CS433--Digital Image Processing</li>
-  </ul>
+	<input type ="text"  id ="myInput4" onkeyup="myFunction4()" placeholder="Search for names..">
+
+	<table id="myTable4">
+		<tr class="header">
+			<th style = "width:30%;">Course Number</th>
+	    <th style = "width:60%;">Course Title</th>
+			<th style = "width:10%;">Credit Amount</th>
+		</tr>
+		<tr>
+			<td>CS405</td>
+			<td>Operating Systems</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CS410</td>
+			<td>Software Engineering</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS415</td>
+			<td>Principles of Programming Languages</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS423</td>
+			<td>Computer and Network Security</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS444</td>
+			<td>Human Computer Interaction</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CS445</td>
+			<td>Artificial Intelligence</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS447</td>
+			<td>Machine Learning</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CS467</td>
+			<td>Information Systems Applications: Embedded Systems</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>CS485</td>
+			<td>Database Systems Design</td>
+			<td>3</td>
+		</tr>
+	</table>
+
 </div>
+
+
+
+
+
+
+
 
 </main>
 <hr>
