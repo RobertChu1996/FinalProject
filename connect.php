@@ -20,10 +20,11 @@ die("Connection failed" . $conn->connect_error);
 
 }
 
-
-$sql = "SELECT User, Pass FROM loginform where user = $username2";
+$message = "You have entered the wrong username or password. Please try again. ";
+$sql = "SELECT User, Pass FROM loginform";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
+
 
 if($row["User"] === $username2 && $row["Pass"] === $password2)
 {
@@ -34,13 +35,10 @@ include 'classeslist.html';
 }
 else{
 
-  include 'hi.php';
+  echo "<script type='text/javascript'>alert('$message');</script>";
+  include 'login.php';
 
 }
-
-
-
-
 
 
  ?>
