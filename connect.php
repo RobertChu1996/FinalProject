@@ -30,7 +30,7 @@ if($row["User"] === $username2 && $row["Pass"] === $password2)
 {
 
 
-include 'classeslist.html';
+include 'index.html';
 
 }
 else{
