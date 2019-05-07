@@ -23,7 +23,7 @@
     <ul>
   <li><a class="active" href="index.html">Home</a></li>
   <li><a href="classeslist.html">CS Class List</a></li>
-  <li><a href="suggestion.html">Suggestions</a></li>
+  <li><a href="suggestion.php">Suggestions</a></li>
   <li id="contact">
       <a href="contactus.html">Contact Us!</a></li>
 </ul>
@@ -35,41 +35,29 @@
 <h1>Classes Register helper!</h1>
 
 <fieldset>
-<p>Haven't decide what classes you are going to take next semester? Don't worry, let us help you! Simply answer the questions below and we will give you some suggestions.</p>
+<p>Haven't decide what classes you are going to take next semester? Don't worry, let us help you! Simply answer the questions below and we will give you some suggestions.<br><strong>Important!!! Please select the class you took and the grade is C or higher, otherwise it won't count in our system.</strong></p>
 </fieldset>
 
 <img id="worry" alt="Don't worry" src="images/don'tworry.jpg">
-<h2>What classes you took before?</h2>
+<h2>What classes you took and the grade is higher or equal to C before?</h2>
 
-<form method="post" action="suggestion.html">
+<form method="post" action="suggestion.php">
     <table style="width:40%">
         <thead>
             <th>100 Classes</th>
-            <th>What grade you got?</th>
+         
         </thead>
         <tbody>
             <tr>
-                <td class="CName"><input type="checkbox" name="classes" value="101 Exploring Creative Computing">101 Exploring Creative Computing
+                <!--A-->
+                <td class="CName"><input type="checkbox" name="classes[]" value="101 Exploring Creative Computing">101 Exploring Creative Computing
                 </td>
-                <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+                
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="116 Web Technology I">116 Web Technology I</td>
-            <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+                <!--B-->
+            <td><input type="checkbox" name="classes[]" value="116 Web Technology I">116 Web Technology I</td>
+          
             </tr>
             
         </tbody>
@@ -78,41 +66,23 @@
     <table style="width:40%">
         <thead>
             <th>200 Classes</th>
-            <th>What grade you got?</th>
+            
         </thead>
         <tbody>
             <tr>
-                <td><input type="checkbox" name="classes" value="234 Algorithms and Problem Solving I">234 Algorithms and Problem Solving I</td>
-                <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+                <!--C-->
+                <td><input type="checkbox" name="classes[]" value="234 Algorithms and Problem Solving I">234 Algorithms and Problem Solving I</td>
+                
             </tr>
             <tr>
-             <td><input type="checkbox" name="classes" value="250 Algorithms and Problem Solving II">250 Algorithms and Problem Solving II</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+                <!--D-->
+             <td><input type="checkbox" name="classes[]" value="250 Algorithms and Problem Solving II">250 Algorithms and Problem Solving II</td>
+               
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="275 Mathematical Foundations of Algorithms">275 Mathematical Foundations of Algorithms</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+                <!--E-->
+            <td><input type="checkbox" name="classes[]" value="275 Mathematical Foundations of Algorithms">275 Mathematical Foundations of Algorithms</td>
+               
             </tr>
             
         </tbody>
@@ -120,78 +90,36 @@
     <table style="width:40%">
         <thead>
             <th>300 Classes</th>
-            <th>What grade you got?</th>
+            
         </thead>
         <tbody>
             <tr>
-                <td><input type="checkbox" name="classes" value="313  Networking and Telecommunications">313  Networking and Telecommunications </td>
-                <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+                <!--F-->
+                <td><input type="checkbox" name="classes[]" value="313  Networking and Telecommunications">313  Networking and Telecommunications </td>
+               
             </tr>
             <tr>
-             <td><input type="checkbox" name="classes" value="341 	
-                 Data Structures">341 	
+                <!--G-->
+             <td><input type="checkbox" name="classes[]" value="341 Data Structures">341 	
                  Data Structures</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+               
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="344 Introduction to Web Programming">344 Introduction to Web Programming</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+            <td><input type="checkbox" name="classes[]" value="344 Introduction to Web Programming">344 Introduction to Web Programming</td>
+              
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="345 Mobile Application Development">345 Mobile Application Development</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+            <td><input type="checkbox" name="classes[]" value="345 Mobile Application Development">345 Mobile Application Development</td>
+               
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="375 Computer Systems">375 Computer Systems</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+            <td><input type="checkbox" name="classes[]" value="375 Computer Systems">375 Computer Systems</td>
+              
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="385 	
-Applied Database Management Systems">385 	
+            <td><input type="checkbox" name="classes[]" value="385 Applied Database Management Systems">385 	
 Applied Database Management Systems</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+               
             </tr>
             
         </tbody>
@@ -199,81 +127,40 @@ Applied Database Management Systems</td>
     <table style="width:40%">
         <thead>
             <th>400 Classes</th>
-            <th>What grade you got?</th>
+            
         </thead>
         <tbody>
             <tr>
-                <td><input type="checkbox" name="classes" value="405 Operating Systems">405 Operating Systems</td>
-                <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+                <td><input type="checkbox" name="classes[]" value="405 Operating Systems">405 Operating Systems</td>
+                
             </tr>
             <tr>
-             <td><input type="checkbox" name="classes" value="410 Software Engineering">410 Software Engineering</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+             <td><input type="checkbox" name="classes[]" value="410 Software Engineering">410 Software Engineering</td>
+               
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="435 Theory of Computation">435 Theory of Computation</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+            <td><input type="checkbox" name="classes[]" value="435 Theory of Computation">435 Theory of Computation</td>
+               
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="440 Theories of Algorithms">440 Theories of Algorithms</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+            <td><input type="checkbox" name="classes[]" value="440 Theories of Algorithms">440 Theories of Algorithms</td>
+               
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="447 Machine Learning">447 Machine Learning</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+            <td><input type="checkbox" name="classes[]" value="447 Machine Learning">447 Machine Learning</td>
+              
             </tr>
             <tr>
-            <td><input type="checkbox" name="classes" value="485 Database Systems Design">485 Database Systems Design</td>
-               <td id="Grade"><select>
-                    <option value=" ">select!</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="F">F</option>
-                    </select></td>
+            <td><input type="checkbox" name="classes[]" value="485 Database Systems Design">485 Database Systems Design</td>
+              
             </tr>
             
             
         </tbody>
     </table>
     
-<input type="submit" name="submit" onclick="clicked()" value="Submit">
+<input type="submit" name="submit" value="Submit">
+    <?php include 'checkbox_value.php';?>
     </form>
 </main>
 
